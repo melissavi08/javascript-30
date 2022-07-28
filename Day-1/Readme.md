@@ -1,8 +1,12 @@
-#JavaScript30 - Day 1
+# JavaScript30 - Day 1
 
-Here is **Day-1 of JavaScript30**, following step by step the tutorial, but I have made a few little changes.
-[JavaScript 30](https://javascript30.com/ "JavaScript 30") is a 30 Day Vanilla JS Coding Challenge
-No Frameworks / No Compilers / No Libraries
+Hi, everyone:wave:
+
+:woman_technologist: Here is **Day-1 of JavaScript30**, following step by step the tutorial, but I have made a few little changes.
+
+:computer: [JavaScript 30](https://javascript30.com/ "JavaScript 30") is a 30 Day Vanilla JS Coding Challenge
+
+:x: No Frameworks / No Compilers / No Libraries
 
 ## Screenshot
 
