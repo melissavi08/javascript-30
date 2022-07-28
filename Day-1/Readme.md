@@ -14,7 +14,7 @@ Hi, everyone:wave:
 
 ## Live site
 
-- [Day-1/30](https://melissavi08.github.io/day-1-javascript-30/index.html)
+- [Day-1/30](https://melissavi08.github.io/javascript-30/Day-1/index.html)
 
 ## Connect with me
 
