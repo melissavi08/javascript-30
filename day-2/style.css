@@ -1,5 +1,6 @@
 html {
-  background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
+  background: pink
+    url(https://images.unsplash.com/photo-1562619371-b67725b6fde2);
   background-size: cover;
   font-family: "helvetica neue";
   text-align: center;
@@ -37,13 +38,24 @@ body {
 .hand {
   width: 50%;
   height: 6px;
-  background: black;
+  background-color: dimgrey;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand {
+  height: 3px;
+  background: red;
+}
+
+.hour-hand {
+  left: 10%;
+  width: 40%;
+  background: black;
 }
 
 .circle-center {
