@@ -1,4 +1,4 @@
-# JavaScript30 - Day 1
+# JavaScript30 - Day 2
 
 Hello!!!:wave:
 
