@@ -1,0 +1,48 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --yellow: #e8d35a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+h1 {
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+span {
+  color: var(--yellow);
+}
+
+header h3 {
+  color: var(--yellow);
+}
+
+main {
+  margin: 20px 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px 0px;
+}
