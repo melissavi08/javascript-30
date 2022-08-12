@@ -13,3 +13,27 @@ const bands = [
   "Anywhere But Here",
   "An Old Dog",
 ];
+
+// STEP 3
+function strip(bandName) {
+  return bandName.replace(/^(a |the |an )/i, "").trim();
+}
+
+// STEP 1
+// const sortedBands = bands.sort(function (a, b) {
+//   if (a > b) {
+//     return 1;
+//   } else {
+//     return -1;
+//   }
+// });
+
+// STEP 4
+const sortedBands = bands.sort((a, b) => (strip(a) > strip(b) ? 1 : -1));
+
+document.querySelector("#bands").innerHTML = sortedBands
+  .map(band => `<li>${band}</li>`)
+  .join("");
+
+// STEP 2
+console.log(sortedBands);
