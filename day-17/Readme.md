@@ -1,8 +1,8 @@
-# JavaScript30 - Day 16
+# JavaScript30 - Day 17
 
 Hello!!!:wave:
 
-:woman_technologist: Here is **Day-16 of JavaScript30**, following step by step the tutorial, but I have made a few little changes.
+:woman_technologist: Here is **Day-17 of JavaScript30**, following step by step the tutorial.
 
 :computer: [JavaScript 30](https://javascript30.com/) is a 30 Day Vanilla JS Coding Challenge
 
@@ -10,11 +10,11 @@ Hello!!!:wave:
 
 ## Screenshot
 
-<img src="./img/screenshot16.jpg" alt="screenshot16" style="width:50%;"/>
+<img src="./img/screenshot17.jpg" alt="screenshot17" style="width:60%;"/>
 
 ## Live site
 
-- [Day-16/30](https://melissavi08.github.io/javascript-30/day-16/index.html)
+- [Day-17/30](https://melissavi08.github.io/javascript-30/day-17/index.html)
 
 ## Connect with me
 
