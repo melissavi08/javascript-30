@@ -4,7 +4,6 @@ const ctx = canvas.getContext("2d");
 const strip = document.querySelector(".strip");
 const snap = document.querySelector(".snap");
 
-// STEP 1
 function getVideo() {
   navigator.mediaDevices
     .getUserMedia({
@@ -13,7 +12,6 @@ function getVideo() {
     })
     .then(localMediaStream => {
       console.log(localMediaStream);
-      // STEP 3
       video.srcObject = localMediaStream;
       video.play();
     })
@@ -22,40 +20,35 @@ function getVideo() {
     });
 }
 
-// STEP 4
 function paintToCanvas() {
   const width = video.videoWidth;
   const height = video.videoHeight;
-  // console.log(width, height);
   canvas.width = width;
   canvas.height = height;
 
   return setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
-    // STEP 8 take pixels out
+    // take pixels out
     let pixels = ctx.getImageData(0, 0, width, height);
-    // console.log(pixels);
     // mess with them
     // pixels = redEffect(pixels);
-    // STEP 12
+
     // pixels = rgbSplit(pixels);
     // ctx.globalAlpha = 0.1;
-    // STEP 14
+
     pixels = greenScreen(pixels);
-    // STEP 10 put them back
+    // put them back
     ctx.putImageData(pixels, 0, 0);
   }, 16);
 }
 
-// STEP 5
 function takePhoto() {
   // played the sound
   snap.currentTime = 0;
   snap.play();
 
-  //STEP 7 take the data out of the canvas
+  // take the data out of the canvas
   const data = canvas.toDataURL("image/jpeg");
-  // console.log(data);
   const link = document.createElement("a");
   link.href = data;
   link.setAttribute("download", "handsome");
@@ -64,7 +57,6 @@ function takePhoto() {
   strip.insertBefore(link, strip.firstChild);
 }
 
-// STEP 9
 function redEffect(pixels) {
   for (let i = 0; i < pixels.data.length; i += 4) {
     pixels.data[i + 0] = pixels.data[i + 0] + 200; // RED
@@ -74,7 +66,6 @@ function redEffect(pixels) {
   return pixels;
 }
 
-// STEP 11
 function rgbSplit(pixels) {
   for (let i = 0; i < pixels.data.length; i += 4) {
     pixels.data[i - 150] = pixels.data[i + 0]; // RED
@@ -84,7 +75,6 @@ function rgbSplit(pixels) {
   return pixels;
 }
 
-// STEP 13
 function greenScreen(pixels) {
   const levels = {};
 
@@ -116,8 +106,6 @@ function greenScreen(pixels) {
   return pixels;
 }
 
-// STEP 2
 getVideo();
 
-// STEP 6
 video.addEventListener("canplay", paintToCanvas);
