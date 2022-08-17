@@ -1,13 +1,5 @@
-// STEP 1
-// const timeNodes = document.querySelectorAll("[data-time]");
-
-// STEP 4
 const timeNodes = Array.from(document.querySelectorAll("[data-time]"));
 
-// STEP 3
-// const seconds = timeNodes.map(node => node.dataset.time);
-
-// STEP 5
 const seconds = timeNodes
   .map(node => node.dataset.time)
   .map(timeCode => {
@@ -25,6 +17,3 @@ const mins = Math.floor(secondsLeft / 60);
 secondsLeft = secondsLeft % 60;
 
 console.log(hours, mins, secondsLeft);
-
-// STEP 2
-// console.log(timeNodes);
