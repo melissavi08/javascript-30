@@ -3,7 +3,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -11,18 +13,90 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #3BC1AC;
+  background-color: #87cefa;
   display: flex;
   min-height: 100vh;
   align-items: center;
 
-  background-image:
-  radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
-  radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
-  radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
-  radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
-  radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
-  background-size:100px 50px;
+  background-image: radial-gradient(
+      circle at 100% 150%,
+      #87cefa 24%,
+      #a2d7f8 25%,
+      #a2d7f8 28%,
+      #87cefa 29%,
+      #87cefa 36%,
+      #a2d7f8 36%,
+      #a2d7f8 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      #87cefa 24%,
+      #a2d7f8 25%,
+      #a2d7f8 28%,
+      #87cefa 29%,
+      #87cefa 36%,
+      #a2d7f8 36%,
+      #a2d7f8 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      #a2d7f8 10%,
+      #87cefa 11%,
+      #87cefa 23%,
+      #a2d7f8 24%,
+      #a2d7f8 30%,
+      #87cefa 31%,
+      #87cefa 43%,
+      #a2d7f8 44%,
+      #a2d7f8 50%,
+      #87cefa 51%,
+      #87cefa 63%,
+      #a2d7f8 64%,
+      #a2d7f8 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      #a2d7f8 5%,
+      #87cefa 6%,
+      #87cefa 15%,
+      #a2d7f8 16%,
+      #a2d7f8 20%,
+      #87cefa 21%,
+      #87cefa 30%,
+      #a2d7f8 31%,
+      #a2d7f8 35%,
+      #87cefa 36%,
+      #87cefa 45%,
+      #a2d7f8 46%,
+      #a2d7f8 49%,
+      transparent 50%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      #a2d7f8 5%,
+      #87cefa 6%,
+      #87cefa 15%,
+      #a2d7f8 16%,
+      #a2d7f8 20%,
+      #87cefa 21%,
+      #87cefa 30%,
+      #a2d7f8 31%,
+      #a2d7f8 35%,
+      #87cefa 36%,
+      #87cefa 45%,
+      #a2d7f8 46%,
+      #a2d7f8 49%,
+      transparent 50%,
+      transparent
+    );
+  background-size: 100px 50px;
 }
 
 .voiceinator {
@@ -34,20 +108,20 @@ body {
   background: white;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   width: calc(100% + 4rem);
   margin: -2rem 0 2rem -2rem;
-  padding: .5rem;
-  background: #ffc600;
-  border-bottom: 5px solid #F3C010;
+  padding: 0.5rem;
+  background: #d87093;
+  border-bottom: 5px solid #d87093;
   text-align: center;
   font-size: 5rem;
   font-weight: 100;
-  font-family: 'Pacifico', cursive;
-  text-shadow: 3px 3px 0 #F3C010;
+  font-family: "Pacifico", cursive;
+  text-shadow: 3px 3px 0 #df83a2;
 }
 
 .voiceinator input,
@@ -60,7 +134,7 @@ h1 {
   padding: 10px;
   border: 0;
   font-size: 2rem;
-  background: #F7F7F7;
+  background: #f7f7f7;
   outline: 0;
 }
 
@@ -69,14 +143,14 @@ textarea {
 }
 
 .voiceinator button {
-  background: #ffc600;
+  background: #d87093;
   border: 0;
   width: 49%;
   float: left;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   margin-bottom: 0;
   font-size: 2rem;
-  border-bottom: 5px solid #F3C010;
+  border-bottom: 5px solid #d87093;
   cursor: pointer;
   position: relative;
 }
