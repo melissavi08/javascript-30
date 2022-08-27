@@ -45,7 +45,7 @@ nav {
 }
 
 .cool > li > a {
-  color: yellow;
+  color: palevioletred;
   text-decoration: none;
   font-size: 20px;
   background: rgba(0, 0, 0, 0.2);
@@ -127,6 +127,7 @@ nav ul {
 }
 
 .bio img {
+  width: 150px;
   float: left;
   margin-right: 20px;
 }
@@ -143,7 +144,7 @@ nav ul {
 
 .dropdown a {
   text-decoration: none;
-  color: #ffc600;
+  color: #fd80b1;
 }
 
 a.button {
@@ -158,9 +159,6 @@ a.button {
 .button[href*="twitter"] {
   background: #019fe9;
 }
-.button[href*="facebook"] {
+.button[href*="linkedin"] {
   background: #3b5998;
-}
-.button[href*="courses"] {
-  background: #ffc600;
 }
