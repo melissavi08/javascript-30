@@ -1,6 +1,6 @@
 :root {
   --white: #fff;
-  --black: #000;
+  --transparent-black: rgba(0, 0, 0, 0.5);
   --blue: #241e49;
   --yellow: #ffc600;
 }
@@ -36,7 +36,7 @@ header p:nth-child(3) {
   margin-bottom: 25px;
 }
 
-header h3 {
+h3 {
   color: var(--yellow);
 }
 
@@ -51,8 +51,36 @@ main {
 
 .challenge {
   margin: 10px;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 300px;
   border-radius: 20px;
-  background-color: var(--black);
+  background-color: var(--transparent-black);
+  overflow: hidden;
+}
+
+.challenge img {
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.challengeInfo {
+  display: grid;
+  align-items: center;
+  height: 130px;
+  padding: 10px;
+}
+
+.challengeInfo p {
+  margin: 10px;
+}
+
+.challengeLinks a {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  margin: 10px 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--yellow);
 }
