@@ -8,6 +8,10 @@ Hi, there:wave:
 
 :x: No Frameworks / No Compilers / No Libraries
 
+## Screenshot
+
+<img src="./img/screenshot14.png" alt="screenshot14" style="width:80%;"/>
+
 ## Live site
 
 - [Day-14/30](https://melissavi08.github.io/javascript-30/day-14/index.html)

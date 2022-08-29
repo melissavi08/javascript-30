@@ -8,6 +8,10 @@ Hello!!!:wave:
 
 :x: No Frameworks / No Compilers / No Libraries
 
+## Screenshot
+
+<img src="./img/screenshot12.jpg" alt="screenshot12" style="width:50%;"/>
+
 ## Live site
 
 - [Day-12/30](https://melissavi08.github.io/javascript-30/day-12/index.html)
