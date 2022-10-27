@@ -2,21 +2,27 @@ html {
   font-size: 10px;
   background: url("./img/background.jpg") bottom center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-body,
-html {
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  min-height: 100vh;
   font-family: sans-serif;
 }
 
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 300px;
 }
 
 .key {
@@ -49,4 +55,10 @@ kbd {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #ff1493;
+}
+
+@media (max-width: 989px) {
+  .keys {
+    flex-wrap: wrap;
+  }
 }
