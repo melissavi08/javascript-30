@@ -51,5 +51,6 @@ console.log("Exercise 3", { findComment });
 const commentIndex = comments.findIndex(comment => comment.id === 823423);
 console.log("Exercise 4", { commentIndex });
 
-comments.splice(commentIndex, 1);
-console.log("Exercise 4", { comments });
+const commentDeleted = [...comments];
+commentDeleted.splice(commentIndex, 1);
+console.log("Exercise 4", { commentDeleted });
