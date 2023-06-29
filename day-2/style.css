@@ -1,72 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  background: pink
-    url(https://images.unsplash.com/photo-1562619371-b67725b6fde2);
-  background-size: cover;
   font-family: "helvetica neue";
-  text-align: center;
   font-size: 10px;
+  text-align: center;
+  background: #ffc0cb
+    url(https://images.unsplash.com/photo-1562619371-b67725b6fde2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
 }
 
 body {
-  margin: 0;
-  font-size: 2rem;
   display: flex;
-  flex: 1;
-  min-height: 100vh;
+  justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-size: 2rem;
 }
 
 .clock {
-  width: 30rem;
-  height: 30rem;
-  border: 20px solid white;
+  width: 100%;
+  max-width: 50rem;
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
+  border: 20px solid #ffffff;
   border-radius: 50%;
-  margin: 50px auto;
   position: relative;
-  padding: 2rem;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
-    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px rgb(239, 239, 239),
+    inset 0 0 10px rgb(0, 0, 0), 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.clock-face {
+.outer-clock-face {
   position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.outer-clock-face::before,
+.outer-clock-face::after,
+.marking::before,
+.marking::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10%;
+  left: 49%;
+  background: #3a99e7;
+  z-index: 0;
+}
+
+.outer-clock-face .marking {
+  position: absolute;
   width: 100%;
   height: 100%;
-  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.marking::before,
+.marking::after {
+  width: 3px;
+  background: #1c4b70;
+}
+
+.marking.marking-one {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.marking.marking-one::before,
+.marking.marking-one::after {
+  transform: translate(-60%);
+}
+
+.marking-two {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.marking-two::before,
+.marking-two::after {
+  transform: translate(-30%);
+}
+
+.marking-three {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.marking-three::before,
+.marking-three::after {
+  width: 5px;
+  background: #3a99e7;
+}
+
+.marking-four {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.marking-four::before,
+.marking-four::after {
+  transform: translate(-30%);
+}
+
+.marking-five {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.marking-five::before,
+.marking-five::after {
+  transform: translate(-5%);
+}
+
+.outer-clock-face::after,
+.marking::after {
+  bottom: 0px;
+}
+
+.clock-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.clock-face::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  z-index: 11;
 }
 
 .hand {
+  position: absolute;
   width: 50%;
   height: 6px;
-  background-color: dimgrey;
-  position: absolute;
+  right: 50%;
   top: 50%;
+  background-color: #696969;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
 .second-hand {
   height: 3px;
-  background: red;
+  background: #ff0000;
 }
 
 .hour-hand {
-  left: 10%;
   width: 40%;
-  background: black;
-}
-
-.circle-center {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: calc(-7px + 50%);
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: white;
+  background: #000000;
 }
