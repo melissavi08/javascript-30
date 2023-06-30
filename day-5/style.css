@@ -35,27 +35,28 @@ body {
   font-size: 20px;
   background-size: cover;
   background-position: center;
-  flex: 1;
+  flex: 1 1 0;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .panel1 {
-  background-image: url(https://images.unsplash.com/photo-1504609813442-a8924e83f76e);
+  background-image: url(https://images.unsplash.com/photo-1504609813442-a8924e83f76e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=80);
 }
 .panel2 {
-  background-image: url(https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80);
+  background-image: url(https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80);
 }
 .panel3 {
-  background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d);
+  background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=800&fit=crop&s=967e8a713a4e395260793fc8c802901d);
 }
 .panel4 {
-  background-image: url(https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-image: url(https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80);
 }
 .panel5 {
-  background-image: url(https://images.unsplash.com/photo-1561134643-668f9057cce4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  background-image: url(https://images.unsplash.com/photo-1561134643-668f9057cce4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80);
 }
 
 /* Flex Children */
@@ -97,6 +98,12 @@ body {
 }
 
 .panel.open {
-  flex: 5;
+  flex: 5 1 0;
   font-size: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .panels {
+    flex-direction: column;
+  }
 }

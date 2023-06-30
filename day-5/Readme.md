@@ -10,7 +10,7 @@ Hello!!!:wave:
 
 ## Screenshot
 
-<img src="./img/screenshot05.png" alt="screenshot05" style="width:50%;"/>
+<img src="./img/screenshot05.jpg" alt="screenshot05" style="width:60%;"/> <img src="./img/screenshot05-01.jpg" alt="screenshot05-01" style="width:20%;"/>
 
 ## Live site
 
