@@ -1,8 +1,8 @@
-# JavaScript30 - Day 3
+# JavaScript30 - Day 03
 
 Hi, there:wave:
 
-:woman_technologist: Here is **Day-3 of JavaScript30**, following step by step the tutorial.
+:woman_technologist: Here is **Day-03 of JavaScript30**, following step by step the tutorial.
 
 :computer: [JavaScript 30](https://javascript30.com/ "JavaScript 30") is a 30 Day Vanilla JS Coding Challenge
 
@@ -14,7 +14,7 @@ Hi, there:wave:
 
 ## Live site
 
-- [Day-3/30](https://melissavi08.github.io/javascript-30/day-3/index.html)
+- [Day-03/30](https://melissavi08.github.io/javascript-30/day-03/index.html)
 
 ## Connect with me
 

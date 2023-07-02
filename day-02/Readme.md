@@ -1,8 +1,8 @@
-# JavaScript30 - Day 2
+# JavaScript30 - Day 02
 
 Hello!!!:wave:
 
-:woman_technologist: Here is **Day-2 of JavaScript30**, following step by step the tutorial, but I have made a few little changes.
+:woman_technologist: Here is **Day-02 of JavaScript30**, following step by step the tutorial, but I have made a few little changes.
 
 :computer: [JavaScript 30](https://javascript30.com/ "JavaScript 30") is a 30 Day Vanilla JS Coding Challenge
 
@@ -14,7 +14,7 @@ Hello!!!:wave:
 
 ## Live site
 
-- [Day-2/30](https://melissavi08.github.io/javascript-30/day-2/index.html)
+- [Day-02/30](https://melissavi08.github.io/javascript-30/day-02/index.html)
 
 ## Connect with me
 

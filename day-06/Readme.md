@@ -1,8 +1,8 @@
-# JavaScript30 - Day 6
+# JavaScript30 - Day 06
 
 Hi, there:wave:
 
-:woman_technologist: Here is **Day-6 of JavaScript30**, following step by step the tutorial.
+:woman_technologist: Here is **Day-06 of JavaScript30**, following step by step the tutorial.
 
 :computer: [JavaScript 30](https://javascript30.com/) is a 30 Day Vanilla JS Coding Challenge
 
@@ -20,7 +20,7 @@ Hi, there:wave:
 
 ## Live site
 
-- [Day-6/30](https://melissavi08.github.io/javascript-30/day-6/index.html)
+- [Day-06/30](https://melissavi08.github.io/javascript-30/day-06/index.html)
 
 ## Connect with me
 

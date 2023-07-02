@@ -1,8 +1,8 @@
-# JavaScript30 - Day 5
+# JavaScript30 - Day 05
 
 Hello!!!:wave:
 
-:woman_technologist: Here is **Day-5 of JavaScript30**, following step by step the tutorial, but I have made a few little changes.
+:woman_technologist: Here is **Day-05 of JavaScript30**, following step by step the tutorial, but I have made a few little changes.
 
 :computer: [JavaScript 30](https://javascript30.com/) is a 30 Day Vanilla JS Coding Challenge
 
@@ -20,7 +20,7 @@ Hello!!!:wave:
 
 ## Live site
 
-- [Day-5/30](https://melissavi08.github.io/javascript-30/day-5/index.html)
+- [Day-05/30](https://melissavi08.github.io/javascript-30/day-05/index.html)
 
 ## Connect with me
 

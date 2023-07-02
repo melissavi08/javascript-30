@@ -1,8 +1,8 @@
-# JavaScript30 - Day 4
+# JavaScript30 - Day 04
 
 Hi, there:wave:
 
-:woman_technologist: Here is **Day-4 of JavaScript30**, following step by step the tutorial. In this version, I have added some HTML and CSS.
+:woman_technologist: Here is **Day-04 of JavaScript30**, following step by step the tutorial. In this version, I have added some HTML and CSS.
 
 :computer: [JavaScript 30](https://javascript30.com/) is a 30 Day Vanilla JS Coding Challenge
 
@@ -10,11 +10,11 @@ Hi, there:wave:
 
 ## Screenshot
 
-<img src="./img/screenshot04.png" alt="screenshot04" style="width:60%;"/>
+<img src="./img/screenshot04.jpg" alt="screenshot04" style="width:60%;"/>
 
 ## Live site
 
-- [Day-4/30](https://melissavi08.github.io/javascript-30/day-4/index.html)
+- [Day-04/30](https://melissavi08.github.io/javascript-30/day-04/index.html)
 
 ## Connect with me
 
